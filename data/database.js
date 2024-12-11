@@ -1,8 +1,8 @@
 const dotenv = require('dotenv');
 dotenv.config();
+require('dotenv').config();
 
 const MongoClient = require(`mongodb`).MongoClient;
-
 
 console.log('MONGODB_URI:', process.env.MONGODB_URI); 
 
@@ -16,6 +16,7 @@ const initDb = (callback) => {
     MongoClient.connect(process.env.MONGODB_URI)
     .then((client)=>{
         database = client;
+        console.log('Database connected successfully!');
         callback(null, database);
     })
     .catch((err) =>{
