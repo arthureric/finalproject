@@ -1,0 +1,34 @@
+[
+    {
+        "roleId": "r1",
+        "roleName": "admin",
+        "permissions": [
+            "create_task",
+            "delete_task",
+            "view_all_users"
+        ]
+    },
+    {
+        "roleId": "r2",
+        "roleName": "user",
+        "permissions": [
+            "create_task",
+            "view_own_tasks"
+        ]
+    },
+    {
+        "roleId": "r3",
+        "roleName": "moderator",
+        "permissions": [
+            "edit_task",
+            "view_all_tasks"
+        ]
+    },
+    {
+        "roleId": "r4",
+        "roleName": "guest",
+        "permissions": [
+            "view_public_tasks"
+        ]
+    }
+],

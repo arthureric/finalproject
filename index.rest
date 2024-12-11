@@ -1,0 +1,86 @@
+### Get All Users
+GET http://localhost:5500/users
+Content-Type: application/json
+
+###
+
+### Get User by ID
+GET http://localhost:5500/users/67151167b29814e6bb3cb951
+Content-Type: application/json
+
+###
+
+### Create a New User
+POST http://localhost:5500/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "password123"
+}
+
+###
+
+### Update User by ID
+PUT http://localhost:5500/users/67151167b29814e6bb3cb951
+Content-Type: application/json
+
+{
+    "name": "John Smith",
+    "email": "johnsmith@example.com"
+}
+
+###
+
+### Delete User by ID
+DELETE http://localhost:5500/users/67151167b29814e6bb3cb951
+Content-Type: application/json
+
+###
+
+
+### Log out User (Invalidate Session)
+POST http://localhost:5500/users/logout
+Content-Type: application/json
+
+{
+    "sessionId": 1
+}
+
+###
+
+### Get All Roles
+GET http://localhost:5500/roles
+Content-Type: application/json
+
+###
+
+### Create a New Role
+POST http://localhost:5500/roles
+Content-Type: application/json
+
+{
+    "roleName": "editor",
+    "permissions": ["read", "write"]
+}
+
+###
+
+### Update Role by ID
+PUT http://localhost:5500/roles/67151192b29814e6bb3cb95d
+Content-Type: application/json
+
+{
+    "roleName": "admin",
+    "permissions": ["read", "write", "delete"]
+}
+
+###
+
+### Delete Role by ID
+DELETE http://localhost:5500/roles/67151192b29814e6bb3cb95d
+Content-Type: application/json
+
+###
+
