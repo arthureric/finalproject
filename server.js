@@ -1,6 +1,7 @@
 // import express
 const express = require('express');
 const mongodb = require('./data/database');
+require('dotenv').config();
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use('/', require('./routes')); // all routes are bundled in './routes'
 const port = process.env.PORT || 5500;
 
 // Initialize MongoDB connection and start the server
+console.log('MongoDB URI:', process.env.MONGODB_URI);
 mongodb.initDb((err) => {
     if(err) {
         console.log(err);
