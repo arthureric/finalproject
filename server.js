@@ -10,7 +10,7 @@ const swaggerUIPath = require("swagger-ui-express");
 const swaggerjsonFilePath = require("./swagger-output.json");
 app.use("/api-docs", swaggerUIPath.serve, swaggerUIPath.setup(swaggerjsonFilePath));
 
-app.use(express.json()); // For parsing application/json
+app.use(express.json()); // Enable JSON parsing for incoming requests
 
 // Routes setup
 app.use('/', require('./routes')); // all routes are bundled in './routes'

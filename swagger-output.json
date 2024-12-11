@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-      "title": "task_management_system_data",
+      "title": "Task_Management_System_Data",
       "description": "API for managing Task",
       "version": "1.0.0"
     },
