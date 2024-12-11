@@ -2,7 +2,6 @@
 const express = require('express');
 const mongodb = require('./data/database');
 
-
 const app = express();
 
 //Swagger setup for API documentation
