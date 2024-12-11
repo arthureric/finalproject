@@ -1,6 +1,7 @@
 const { MongoClient } = require('mongodb');
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+console.log('MongoDB URI:', process.env.MONGODB_URI); // Debugging step to ensure the URI is loaded
+
 
 let database; // This will hold the database instance
 
